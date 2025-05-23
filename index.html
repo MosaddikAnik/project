@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Selector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page1">
+    <h2>Select Products</h2>
+    <label><input type="checkbox" value="Laptop" class="product"> Laptop</label><br>
+    <label><input type="checkbox" value="Phone" class="product"> Phone</label><br>
+    <label><input type="checkbox" value="Headphones" class="product"> Headphones</label><br>
+    <label><input type="checkbox" value="Camera" class="product"> Camera</label><br>
+    
+    <button onclick="submitProducts()">Submit</button>
+    <button onclick="goToPage2()">Next Page</button>
+  </div>
+
+  <div id="page2" style="display: none;">
+    <h2>Selected Products</h2>
+    <ul id="productList"></ul>
+    <button onclick="goBack()">Go Back</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
